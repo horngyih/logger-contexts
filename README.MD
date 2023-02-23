@@ -9,7 +9,7 @@ The project contains two _family_ of **Action** classes:
   Logger log = new Logger(this.getClass());
 ```
 
-- **InheritedBaseAction** - creates Logger usin the _hardcoded_ target class
+- **InheritedBaseAction** - creates Logger using the _hardcoded_ target class
 ```Java
   Logger log = new Logger(InheritedBaseAction.class);
 ```
@@ -21,7 +21,7 @@ how each _family_ logger construction causes category targeting to be a problem.
 the Logger constructed therefore is pegged to the inheriting child class name as the Log Category
 this allows properly to target the respective child classes Log Category.
 
-- **InheritedBaseAction**: Since the **InheritedBaseAction** class constructs the Logger with the _hardcoded_ target class,
+- **InheritedBaseAction**: Since the **InheritedBaseAction** class constructs the Logger with _hardcoded_ `InheritedBaseAction.class`,
 the Logger created are pegged to the target class name as the Log Category _com.ubicompsystem.experiments.logging.inherited.InheritedBaseAction_
 and further targeting the child classes as a category would not work since the Logger goes not further down the heirarchy.
 
