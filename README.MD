@@ -2,14 +2,14 @@
 
 This is a small toy project to illustrate configuration of Logging Categories.
 
-The project contains two _family_ of **Action** classes,
-one of which creates a Logger based on a _hardcoded_ target class,
-and another creates a Logger using the _this_ keyword.
+The project contains two _family_ of **Action** classes:
+- one of which creates a Logger based on a _hardcoded_ target class,
+- another creates a Logger using the _this_ keyword.
 
-BaseAction - creates Logger using the _this_ keyword
+**BaseAction** - creates Logger using the _this_ keyword
     Logger log = new Logger(this.getClass());
 
-InheritedBaseAction - creates Logger usin the _hardcoded_ target class
+**InheritedBaseAction** - creates Logger usin the _hardcoded_ target class
     Logger log = new Logger(InheritedBaseAction.class);
 
 A simple test runs logging on the two _families_ of **Action** classes and demonstrates
