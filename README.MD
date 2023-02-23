@@ -7,10 +7,10 @@ The project contains two _family_ of **Action** classes:
 - another creates a Logger using the _this_ keyword.
 
 **BaseAction** - creates Logger using the _this_ keyword
-    Logger log = new Logger(this.getClass());
+  Logger log = new Logger(this.getClass());
 
 **InheritedBaseAction** - creates Logger usin the _hardcoded_ target class
-    Logger log = new Logger(InheritedBaseAction.class);
+  Logger log = new Logger(InheritedBaseAction.class);
 
 A simple test runs logging on the two _families_ of **Action** classes and demonstrates
 how each _family_ logger construction causes category targeting to be a problem.
